@@ -2,7 +2,7 @@ const sequelize = require('./connection');
 
 const Sequelize = require("sequelize");
 
-var Burgers = Sequelize.define('Burgers', {
+var Burgers = sequelize.define('Burgers', {
   name: {
     type: Sequelize.STRING,
     allowNull: false
