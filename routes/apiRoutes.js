@@ -1,5 +1,5 @@
 // import our burgers model
-const Burgers = require("../models/burgers");
+const Burgers = require("../models").Burgers;
 
 module.exports = app => {
 

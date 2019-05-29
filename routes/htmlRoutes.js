@@ -1,11 +1,11 @@
 
-const burgers = require("../models/burgers");
+const Burgers = require("../models/").Burgers;
 
 module.exports = (app) => {
 
   app.get("/", function(req, res) {
 
-    burgers.findAll()
+    Burgers.findAll()
       .then(dbBurgerData => {
         res.render("index", {burgerData: dbBurgerData})
       })
