@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     }
   }, {
-      freezeTableName: true
+      timestamps: false
     });
   return Burgers;
 }
